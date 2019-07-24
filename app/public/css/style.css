@@ -1,7 +1,7 @@
 #hero {
     width: 100%;
     height: 100vh;
-    background: url(./backlit-dawn-friends-862848.jpg) top center;
+    background: url(./174647.jpg) top center;
     background-size: cover;
     position: relative;
 }
@@ -33,7 +33,7 @@ body {
 	/* width: 100wh;
 	height: 90vh; */
 	color: #fff;
-	background: linear-gradient(-45deg, #C9A592, #A89A8C, #718D83, #245E62);
+	background: linear-gradient(-45deg, #F3C30B, #FFAD30, #98C786, #97AEDA);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -93,7 +93,7 @@ body {
     line-height: 56px;
     text-transform: uppercase;
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Fascinate', cursive;
 }
 
 #hero h2 {
@@ -117,5 +117,9 @@ body {
 }
 
 .btn-get-started:hover {
-    background-color: #245E62;
+    background-color: #97AEDA;
+}
+
+.modal-content {
+    color: grey;
 }

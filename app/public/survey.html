@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="https://kit.fontawesome.com/5f61df031e.js"></script>
     </script>
@@ -29,7 +30,7 @@
         <h4>I prefer TV Shows over Movies <i class="fas fa-tv"></i></h4>
         <select class="custom-select" id="Q1">
             <option selected disabled>Drop Me</option>
-            <option value="1">1 (strongly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -41,7 +42,7 @@
         <h4>I prefer Dogs over Cats <i class="fas fa-dog"></i></h4>
         <select class="custom-select" id="Q2">
             <option selected disabled>Drop Me</option>
-            <option value="1">1 (strongly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -53,7 +54,7 @@
         <h4>I prefer Lifting Weights over Cardio <i class="fas fa-dumbbell"></i></h4>
         <select class="custom-select" id="Q3">
             <option selected disabled>Drop Me</option>
-            <option value="1">1 (strongly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -65,7 +66,7 @@
         <h4>I prefer Burgers over Tacos <i class="fas fa-hamburger"></i></h4>
         <select class="custom-select" id="Q4">
             <option selected disabled>Drop Me</option>
-            <option value="1">1 (strongly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -77,7 +78,7 @@
         <h4>I prefer Apple over Android <i class="fab fa-apple"></i></h4>
         <select class="custom-select" id="Q5">
             <option selected disabled>Drop Me</option>
-            <option value="1">1 (strongly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -89,7 +90,7 @@
         <h4>I prefer Day-time over Night-time <i class="fas fa-sun"></i></h4>
         <select class="custom-select" id="Q6">
             <option selected disabled>Drop Me</option>
-            <option value="1">1 (strongly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -101,7 +102,7 @@
         <h4>I prefer Jedis over Siths <i class="fas fa-jedi"></i></h4>
         <select class="custom-select" id="Q7">
             <option selected disabled>Drop Me</option>
-            <option value="1">1 (strongly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -113,7 +114,7 @@
         <h4>I prefer Xbox over PS4 <i class="fab fa-xbox"></i></h4>
         <select class="custom-select" id="Q8">
             <option selected disabled>Drop Me</option>
-            <option value="1">1 (strongly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -125,7 +126,7 @@
         <h4>I prefer Girls over Boys <i class="fas fa-female"></i></h4>
         <select class="custom-select" id="Q9">
             <option selected disabled>Drop Me</option>
-            <option value="1">1 (strongly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -137,7 +138,7 @@
         <h4>I prefer Money over Everything <i class="fas fa-money-bill"></i></h4>
         <select class="custom-select" id="Q10">
             <option selected disabled>Drop Me</option>
-            <option value="1">1 (strongly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -145,12 +146,30 @@
         </select>
         <br>
         <br>
-        <a href="#" class="btn btn-info submit" style="background-color: #245E62; border-color: #245E62">Submit</a>
+        <a href="#" class="btn btn-info submit" data-toggle="modal" data-target="#matchModal" style="background-color: #97AEDA; border-color: #97AEDA">Submit</a>
+        <a href="/" class="btn btn-info reset" style="background-color: #97AEDA; border-color: #97AEDA; display: none">No New Friends</a>
         <div style="margin-top:15px; color:#fff">
             <a href="/api/friends" style="color:#fff">API Friends List</a> | <a
                 href="https://github.com/daveyjonezz/FriendFinder.git" style="color:#fff" target="__blank">GitHub
                 Repo</a>
         </div>
+        <!-- MODAL -->
+        <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Friend Match <i class="fas fa-user-friends"></i></h3>
+                </div>
+                <div class="modal-body">
+                  <h4 id="matchName"></h4>
+                    <p id="matchPhoto"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+            </div>
+          </div>
     </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -188,9 +207,9 @@
         console.log(scoresArr)
         // Here we grab the form elements
         newFriend = {
-            Name: $("#name").val().trim(),
-            Image: $("#photo").val().trim(),
-            Scores: scoresArr.map(Number)
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: scoresArr.map(Number)
         };
 
         console.log(newFriend);
@@ -202,30 +221,38 @@
 
         $.post("/api/friends", newFriend, function (data) {
             console.log(data);
+            $("#matchName").text(data.friendData)
+            var img = $('<img id="dynamic">'); //Equivalent: $(document.createElement('img'))
+            img.attr('src', data.photo);
+            img.appendTo('#matchPhoto');
         });
-        compatibility();
+
+        $(".submit").hide();
+        $(".reset").show();
     });
 
-    function compatibility() {
-    // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
-    $.ajax({ url: "/api/friends", method: "GET" })
-      .then(function(friendData) {
+    // function compatibility() {
+    //     // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+    //     $.ajax({ url: "/api/friends", method: "GET" })
+    //         .then(function (friendData) {
 
-        // Here we then log the friendData to console, where it will show up as an object.
-        console.log(friendData);
-        console.log("------------------------------------");
+    //             // Here we then log the friendData to console, where it will show up as an object.
+    //             console.log(friendData);
+    //             console.log("------------------------------------");
 
-        // Loop through and display each of the customers
-        for (var i = 0; i < friendData.length; i++) {
-            for (var j = 0; j<10;j++){
-                var x = newFriend.Scores.map(function(item, index) {
-                // In this case item correspond to currentValue of array a, 
-                // using index to get value from array b
-                return item - friendData[i].Scores[index];
-                console.log(x)
-})
-            }
-        }
-      });
-  }
+    //             // Loop through and display each of the customers
+    //             for (var i = 0; i < friendData.length; i++) {
+    //                 for (var j = 0; j < 10; j++) {
+    //                     var x = newFriend.Scores.map(function (item, index) {
+    //                         // In this case item correspond to currentValue of array a, 
+    //                         // using index to get value from array b
+    //                         return item - friendData[i].Scores[index];
+    //                         console.log(x)
+    //                     })
+    //                 }
+    //             }
+    //         });
+    // }
+
+    
 </script>
